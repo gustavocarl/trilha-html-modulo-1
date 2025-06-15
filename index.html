@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trilha HTML Módulo 1</title>
 </head>
+
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+   <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+   <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+   <h2 id="index">Indíce</h2>
+   <ul>
+      <li>
+         <a href="#communication-client-server">Entendendo a Comunicação Cliente x Servidor</a>
+      </li>
+      <li>
+         <a href="#html-introduction">Introdução ao HTML na Prática</a>
+      </li>
+   </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h3 id="communication-client-server">Entendendo a Comunicação Cliente x Servidor</h3>
+   <small><a href="#index">Voltar</a></small>
+   <h4>Arquitetura Cliente-Servidor</h4>
+   <p>É uma arquitetura que tem dois principais atores o Cliente e o Servidor sendo cada um tendo suas próprias responsabilidades, isso ajuda na manutenção e modularidade do sistema</p>
+   <h4>Cliente</h4>
+   <p>Cliente é onde o usuário interaje com as aplicações, ele apresenta a interface do usuário e envia as informações necessárias para o servidor. Exemplos de Clientes são navegadores web, softwares instalados e a tela visual de aplicações de celulares</p>
+   <h4>Servidor</h4>
+   <p>Servidor é onde as solicitações da aplicação são respondidas através de protocolos, nele são gerenciados os dados, a lógica do negócio e envia as respostas para o cliente. Servidores podem atender vários usuários simultaneamente, garantindo o desempenho e a estabilidade da aplicação.</p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <hr />
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h3 id="html-introduction">Introdução ao HTML na Prática</h3>
+   <small><a href="">Voltar</a></small>
+   <h4>Estrutura HTML</h4>
+   <p>A estrutura básica de uma página HTML é composta pelas tags <mark>&lt;html&gt; &lt;head&gt; &lt;body&gt;</mark> </p>
+   <ul>
+      <li><strong>&lt;html&gt;</strong> é a tag principal onde fica toda a página sendo parte visual ou não</li>
+      <li><strong>&lt;head&gt;</strong> é a tag onde ficam informações não visuais onde que serão passadas para o navegador como arquivos css, fontes etc.</li>
+      <li><strong>&lt;body&gt;</strong> é a tag que representa a parte visual do HTML, onde são mostrados paragráfos, imagens etc.</li>
+   </ul>
+   <h4>Tags HTML</h4>
+   <p>As tags em HTML são elementos essenciais para a apresentação de uma página web. Cada tag possui uma função específica.</p>
+   <ul>
+      <li><strong>&lt;u&gt;</strong> tem a função de <strong>sublinhar</strong> um texto, como no exemplo a seguir: <u>texto sublinhado</u>.</li>
+      <li><strong>&lt;i&gt;</strong> tem a função de deixar o texto em <strong>itálico</strong>: <i>texto em itálico</i>.</li>
+      <li><strong>&lt;sup&gt;</strong> tem a função de exibir o texto em <strong>sobrescrito</strong>: <sup>texto sobrescrito</sup>.</li>
+      <li><strong>&lt;sub&gt;</strong> tem a função de exibir o texto em <strong>subscrito</strong>: <sub>texto subscrito</sub>.</li>
+   </ul>
+   <h4>Textos</h4>
+   <ul>
+      <li>
+         <p>Em HTML, os textos podem ser escritos utilizando a tag <code>&lt;p&gt;</code>, que representa um parágrafo.</p>
+      </li>
+      <li>
+         <p>Para títulos, utilizam-se as tags de <code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code>, onde <code>&lt;h1&gt;</code> representa o nível mais importante e <code>&lt;h6&gt;</code> o menos relevante.</p>
+      </li>
+   </ul>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h4>Links</h4>
+   <ul>
+      <li>
+         <p>Em HTML, existe a tag <strong>&lt;a&gt;</strong>, utilizada para criar links que conectam o usuário a outras partes do próprio site ou a páginas externas.</p>
+      </li>
+   </ul>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+   <hr />
 
+   <h3>Fontes de Pesquisa</h3>
+   <a href="https://blog.grancursosonline.com.br/arquitetura-cliente-servidor/#:~:text=A%20comunica%C3%A7%C3%A3o%20entre%20o%20cliente%20e%20o%20servidor,e%20envia%20uma%20resposta%20de%20volta%20ao%20cliente.">Gran Cursos Blog</a>
 </body>
+
 </html>
